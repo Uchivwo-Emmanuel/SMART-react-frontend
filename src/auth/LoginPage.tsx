@@ -7,7 +7,7 @@ import type { LoginRequest } from "../api/types.ts";
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { login, user } = useAuth(); // ← grab user from context
+  const { login } = useAuth(); // ← grab user from context
   const nav = useNavigate();
 
   const handle = async (e: FormEvent) => {

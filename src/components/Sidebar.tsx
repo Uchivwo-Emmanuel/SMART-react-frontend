@@ -24,11 +24,13 @@ export default function Sidebar({ isOpen, setIsOpen, onNavClick }: Props) {
   const { user, logout: ctxLogout } = useAuth();
 
   /* ---------- avatar / initials ---------- */
+  /*
   const initials =
     [user?.firstName, user?.lastName]
       .filter(Boolean)
       .map((n) => n![0].toUpperCase())
       .join("") || user?.email[0].toUpperCase();
+*/
 
   const handleLogout = async () => {
     try {
