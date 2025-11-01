@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/index.css or global.css */
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent body scroll */
+    height: 100vh;
+}
