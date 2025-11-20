@@ -29,5 +29,5 @@ dist-ssr
 .env.test.local
 .env.production.local
 
-# sensitive
-security.env
+# Ignore security-sensitive files
+api.env
