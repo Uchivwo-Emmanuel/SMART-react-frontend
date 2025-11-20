@@ -30,4 +30,4 @@ dist-ssr
 .env.production.local
 
 # Ignore security-sensitive files
-api.env
+.env
