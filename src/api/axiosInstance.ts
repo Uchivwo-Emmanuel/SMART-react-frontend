@@ -1,10 +1,13 @@
 // src/api/axiosInstance.ts
 import axios from "axios";
 
-const API_BASE = import.meta.env
-  .VITE_API_BASE; /*?? "http://localhost:8080/api"*/
+const API_BASE = import.meta.env.VITE_API_BASE;
 console.log("API_BASE", API_BASE);
-export const api = axios.create({ baseURL: API_BASE, withCredentials: true });
+export const api = axios.create({
+  baseURL: API_BASE,
+  withCredentials: true,
+  timeout: 10000,
+});
 
 /* ----------  CSRF  ---------- */
 function xsrfFromCookie(): string | null {
